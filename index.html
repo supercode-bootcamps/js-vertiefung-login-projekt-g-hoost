@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="de-DE">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt Name</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    </style>
 </head>
+
 <body>
-    
+    <nav>
+        <img src="assets/img/eye.png" alt="eye logo" />
+        <div class="nav-container">
+            <a id="userPrompt" href="">welcome,</a>
+            <a href="">> log out</a>
+        </div>
+    </nav>
+    <div id="modal">
+        <h2>> LOGIN</h2>
+        <form>
+            <input type="text" id="username" placeholder="username" required><br><br>
+            <p class="asteriks"></p>
+            <input type="text" id="password" placeholder="password" required><br><br>
+            <p class="asteriks"></p>
+            <input type="submit" id="submit" value="SUBMIT" placeholder="submit">
+            <p id="letter"></p>
+        </form>
+
+
+    </div>
+
+    <div class="left">
+        <img src="../assets/img/Illustration.png" alt="Illustration">
+        <p>TOP SECRET</p>
+        <p>You may not click the button.</p>
+        <button>> SECRET CONTENT</button>
+    </div>
+
+
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
