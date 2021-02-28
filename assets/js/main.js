@@ -10,21 +10,28 @@ let modal = document.getElementById('modal');
 let userPrompt = document.getElementById('userPrompt')
 let form = document.querySelector('form');
 
-submit.addEventListener('click', (e) =>
+function validateData()
 {
-    let secret = document.getElementById('password').value;
-    let name = document.getElementById('username').value;
-    e.preventDefault();
-
-    form.reset();
-    USERS.find((x) =>
+    submit.addEventListener('click', (e) =>
     {
-        if (x.secret === secret) {
-            letter.style.color = 'transparent';
-        } else {
-            letter.innerHTML = '* user does not exist';
-            letter.style.color = 'red';
-        }
-        console.log(secret);
+        let secretVal = document.getElementById('password').value;
+
+
+        e.preventDefault();
+
+        form.reset();
+        USERS.find((x) =>
+        {
+            if (x.secret === secretVal) {
+                console.log('richtige Eingabe');
+                letter.style.color = 'transparent';
+                modal.style.visibility = 'hidden';
+
+            } else {
+                letter.innerHTML = '* user does not exist';
+                letter.style.color = 'red';
+            }
+        });
     });
-});
+};
+validateData();

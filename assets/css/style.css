@@ -2,12 +2,11 @@ body {
     background-color:  #3F3D56;
     font-family: 'Roboto Mono', monospace;
 }
-.nav-container {
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     bottom: 2rem;
-
 }
 
 nav img {
@@ -15,16 +14,21 @@ nav img {
     height:auto;
     margin: 1rem 1rem;
     align-items: center;
+    justify-content: space-between;
 }
-nav a {
-    position: sticky;
+nav ul {
+    width: 100%;
     display: flex;
+}
+nav li {
     color: #E5E5E5;
     text-decoration: none;
     font-size: 1rem;
     padding-right: 3rem;
+    align-items: center;
+    list-style-type: none;
 }
-nav a:last-of-type {
+nav li:last-of-type {
     color: red;
 }
 h2 {
