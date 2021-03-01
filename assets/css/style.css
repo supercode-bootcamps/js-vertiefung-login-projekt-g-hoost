@@ -1,7 +1,24 @@
 body {
     background-color:  #3F3D56;
     font-family: 'Roboto Mono', monospace;
+
+
 }
+#hacked {
+    visibility: visible;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 40;
+}
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(2px);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,6 +62,9 @@ h2 {
     background-color: #8985A8;
     border-radius: 10px;
     text-align: center;
+    filter: unset;
+    z-index: 10;
+    box-shadow: 10px 10px 15px 10px black;
 }
 input {
     height: 4.2rem;
