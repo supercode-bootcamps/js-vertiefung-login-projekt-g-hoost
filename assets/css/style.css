@@ -1,16 +1,20 @@
 body {
     background-color:  #3F3D56;
     font-family: 'Roboto Mono', monospace;
-
-
 }
 #hacked {
-    visibility: visible;
-    height: 100vh;
-    width: 100vw;
+    visibility: hidden;
+    height: 100%;
+    width: auto;
     margin: 0 auto;
-    position: absolute;
     z-index: 40;
+}
+#hacked img {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    top: 0;
 }
 #overlay {
     width: 100vw;
