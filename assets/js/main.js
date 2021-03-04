@@ -35,6 +35,9 @@ function validateData()
             } else {
                 letter.innerHTML = '* user does not exist';
                 letter.style.color = 'red';
+                e.stopPropagation();
+                document.getElementById('asterisk').style.display = 'unset';
+
             }
         });
     });

@@ -18,17 +18,18 @@
         <div class="nav-container">
             <ul>
                 <li id="userPrompt">> welcome,</li>
-                <li id="logOut"><a> log out</a></li>
+                <li id="logOut"><a>> log out</a></li>
             </ul>
         </div>
     </nav>
     <div id="modal">
         <h2>> LOGIN</h2>
         <form>
-            <input type="text" id="username" placeholder="username" required><br><br>
-            <p class="asteriks"></p>
-            <input type="text" id="password" placeholder="password" required><br><br>
-            <p class="asteriks"></p>
+            <input type="text" id="username" placeholder="username" required>
+            <p id="asterisk">*</p><br>
+            <p></p>
+            <input type="password" id="password" placeholder="password" autocomplete="off" required><br><br>
+            <p></p>
             <input type="submit" id="submit" value="SUBMIT" placeholder="submit">
             <p id="letter"></p>
         </form>
