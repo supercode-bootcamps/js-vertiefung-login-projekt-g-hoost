@@ -8,7 +8,6 @@ body {
     width: auto;
     margin: 0 auto;
     z-index: 40;
-    animation-duration: 2s;
 }
 #hacked img {
     position: absolute;
