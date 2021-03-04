@@ -7,7 +7,7 @@ const USERS = [
 let submit = document.getElementById('submit');
 let letter = document.getElementById('letter');
 let modal = document.getElementById('modal');
-let userPrompt = document.getElementById('userPrompt')
+let userPrompt = document.getElementById('userPrompt');
 let form = document.querySelector('form');
 
 function validateData()
