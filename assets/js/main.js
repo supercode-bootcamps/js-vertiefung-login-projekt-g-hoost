@@ -70,11 +70,18 @@ if (document.cookie) { console.log('true') };
 function loggedIn()
 {
     let loggedIn = getCookie('loggedIn');
-    if (loggedIn = "true") {
+    if (loggedIn === "true") {
         let userID = getCookie('username');
-        let passWord = getCookie('passWord');
+        let passWord = getCookie('password');
         nameVal = userID;
         secretVal = passWord;
+        letter.style.color = 'transparent';
+        modal.style.visibility = 'hidden';
+        document.getElementById('overlay').style.display = 'none';
+        userPrompt.innerHTML = '> welcome back, ' + nameVal;
+
+        console.log(userID);
+        console.log(passWord);
     }
 };
 loggedIn();
