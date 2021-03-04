@@ -79,9 +79,6 @@ function loggedIn()
         modal.style.visibility = 'hidden';
         document.getElementById('overlay').style.display = 'none';
         userPrompt.innerHTML = '> welcome back, ' + nameVal;
-
-        console.log(userID);
-        console.log(passWord);
     }
 };
 loggedIn();
