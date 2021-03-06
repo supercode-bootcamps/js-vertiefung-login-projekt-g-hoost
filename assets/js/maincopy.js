@@ -14,7 +14,6 @@ function validateData()
         let secretVal = document.getElementById('password').value;
 
         e.preventDefault();
-        form.reset();
 
         fetch("https://supercode-auth-demo.herokuapp.com/", {
             method: "POST",
@@ -35,7 +34,6 @@ function validateData()
                     modal.style.visibility = 'hidden';
                     userPrompt.innerHTML = '> welcome, ' + nameVal;
                     setCookie('username', nameVal, 1);
-                    setCookie('password', secretVal, 1);
                     setCookie('loggedIn', "true", 1);
                     document.getElementById('overlay').style.display = 'none';
                 } else {
@@ -119,6 +117,7 @@ function validateData()
             };
 
             deleteAllCookies();
+            form.reset();
             window.location.reload();
         })
     };

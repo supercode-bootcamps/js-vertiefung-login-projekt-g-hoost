@@ -83,6 +83,10 @@ input {
 input[type="text"],
 input[type="password"] {
     padding-left: 1em;
+    background-color: white !important;
+}
+input[type="text"] {
+    color: red;
 }
 #asterisk {
     display: inline-block;
