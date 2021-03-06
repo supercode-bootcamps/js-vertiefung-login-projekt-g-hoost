@@ -97,6 +97,7 @@ input::placeholder {
     color: #8985A8;
     letter-spacing: .3rem;
 }
+input[type="text"]
 
 input:first-of-type {
 margin: 0 auto;
