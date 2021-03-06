@@ -4,8 +4,6 @@ let modal = document.getElementById('modal');
 let userPrompt = document.getElementById('userPrompt');
 let form = document.querySelector('form');
 
-console.log(submit);
-
 function validateData()
 {
     submit.addEventListener('click', (e) =>
@@ -28,7 +26,6 @@ function validateData()
             .then(response => response.json())
             .then((data) =>
             {
-                console.log(data);
                 if (data.success) {
                     infotext.style.color = 'transparent';
                     modal.style.visibility = 'hidden';
@@ -43,7 +40,6 @@ function validateData()
                 }
             });
     });
-
 
     function setCookie(cname, cvalue, exdays)
     {
