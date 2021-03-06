@@ -78,7 +78,6 @@ input {
     width: 38rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-    cursor: pointer;
     border: none;
 }
 input[type="text"],
@@ -88,6 +87,9 @@ input[type="password"] {
 }
 input[type="text"] {
     color: red;
+}
+input[type="submit"] {
+    cursor: pointer;
 }
 #asterisk {
     display: inline-block;
