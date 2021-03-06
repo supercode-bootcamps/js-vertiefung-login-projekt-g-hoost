@@ -4,8 +4,8 @@ body {
 }
 #hacked {
     visibility: hidden;
-    height: 100%;
-    width: auto;
+    height: 50vh;
+    width: 50vw;
     margin: 0 auto;
     z-index: 40;
 }
@@ -125,7 +125,7 @@ box-shadow: none;
     display: none;
 }
 
-#letter {
+#infotext {
 width: 25rem;
 height: 2.5rem;
 margin: 1rem auto 0 16rem;

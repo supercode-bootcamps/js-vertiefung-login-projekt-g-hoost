@@ -1,5 +1,5 @@
 let submit = document.getElementById('submit');
-let letter = document.getElementById('letter');
+let infotext = document.getElementById('infotext');
 let modal = document.getElementById('modal');
 let userPrompt = document.getElementById('userPrompt');
 let form = document.querySelector('form');
@@ -30,15 +30,15 @@ function validateData()
             {
                 console.log(data);
                 if (data.success) {
-                    letter.style.color = 'transparent';
+                    infotext.style.color = 'transparent';
                     modal.style.visibility = 'hidden';
                     userPrompt.innerHTML = '> welcome, ' + nameVal;
                     setCookie('username', nameVal, 1);
                     setCookie('loggedIn', "true", 1);
                     document.getElementById('overlay').style.display = 'none';
                 } else {
-                    letter.innerHTML = '*' + data.message;
-                    letter.style.color = 'red';
+                    infotext.innerHTML = '*' + data.message;
+                    infotext.style.color = 'red';
                     document.getElementById('asterisk').style.display = 'unset';
                 }
             });
@@ -76,10 +76,8 @@ function validateData()
         let loggedIn = getCookie('loggedIn');
         if (loggedIn === "true") {
             let userID = getCookie('username');
-            let passWord = getCookie('password');
             nameVal = userID;
-            secretVal = passWord;
-            letter.style.color = 'transparent';
+            infotext.style.color = 'transparent';
             modal.style.visibility = 'hidden';
             document.getElementById('overlay').style.display = 'none';
             userPrompt.innerHTML = '> welcome back, ' + nameVal;
