@@ -12,7 +12,8 @@ body {
 #hacked img {
     position: absolute;
     width: 100vw;
-    max-height: 1200px;
+    max-height: 100vh;
+    min-height: 100vh;
     height: auto;
     left: 0;
     top: 0;
@@ -136,18 +137,18 @@ font-weight: bold;
 font-size: 1.5rem;
 text-align: left;
 }
-.left > img {
+.illu > img {
     margin: auto 4rem;
     float: left;
 }
-.left p:first-of-type {
+.illu p:first-of-type {
     font-size: 5rem;
     font-weight: bold;
     color: #8985A8;
     padding-top: 13rem;
     margin-bottom: 1rem;
 }
-.left p:last-of-type {
+.illu p:last-of-type {
     color: #8985A8;
     font-size: 2.1rem;
     margin: 0 auto 3rem auto;
