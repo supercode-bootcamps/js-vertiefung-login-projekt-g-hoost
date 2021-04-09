@@ -4,17 +4,12 @@ body {
 }
 #hacked {
     visibility: hidden;
-    height: 50vh;
-    width: 50vw;
-    margin: 0 auto;
     z-index: 40;
 }
 #hacked img {
     position: absolute;
-    width: 100vw;
-    max-height: 100vh;
-    min-height: 100vh;
-    height: auto;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
 }
@@ -58,22 +53,29 @@ h2 {
     font-size: 2.5rem;
 }
 #modal {
-    position: absolute;
-    left: 14%;
-    top: 15%;
-    margin: 0 auto;
-    width: 69.5rem;
-    height: 42rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.modal-overlay {
     background-color: #8985A8;
+    padding: 2% 15%;
     border-radius: 10px;
-    text-align: center;
-    filter: unset;
-    z-index: 10;
     box-shadow: 10px 10px 15px 10px black;
+    text-align: center;
+}
+.modal-overlay h2 {
+    text-align: center;
 }
 input {
-    height: 4.2rem;
-    width: 38rem;
+    width: 100%;
+    padding: 5% 0;
     margin-bottom: 2rem;
     font-size: 1.5rem;
     border: none;
@@ -81,7 +83,7 @@ input {
 input[type="text"],
 input[type="password"] {
     padding-left: 1em;
-    background-color: white !important;
+    background-color: white;
 }
 input[type="text"] {
     color: red;
@@ -104,17 +106,13 @@ input::placeholder {
 }
 input[type="text"]
 
-input:first-of-type {
+/* input:first-of-type {
 margin: 0 auto;
 background: #C4C4C4;
-}
+} */
 input:first-of-type::after {
     content: '*';
     color: red;
-}
-input:nth-of-type(2) {
-margin: 0 auto;
-background: #C4C4C4;
 }
 #submit {
 margin: 0 auto;
@@ -136,11 +134,11 @@ font-weight: bold;
 font-size: 1.5rem;
 text-align: left;
 }
-.illu > img {
-    margin: auto 4rem;
-    float: left;
+.illu {
+    display: flex;
+    justify-content: space-around;
 }
-.illu p:first-of-type {
+.illu h1 {
     font-size: 5rem;
     font-weight: bold;
     color: #8985A8;
